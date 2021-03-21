@@ -1,0 +1,16 @@
+<div class="list">
+  <div *ngFor="let bookmark of bookmarks | async; let i = index" class="bookmark_container">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{ bookmark.name }}</mat-card-title>
+        <a class="delete_btn" (click)="delete(bookmark.id)">✕</a>
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li><a [routerLink]="['show', bookmark.id]">Details</a></li>
+          <li><a [attr.href]="bookmark.url" target="_blank" rel="noopener noreferrer">Go to</a></li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

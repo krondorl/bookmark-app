@@ -1,0 +1,36 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Add new bookmark</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form class="add_form">
+      <div>
+        <mat-form-field class="add_form__field" appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput [formControl]="name" required>
+          <mat-error *ngIf="name.invalid">{{getNameErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field class="add_form__field" appearance="fill">
+          <mat-label>URL</mat-label>
+          <input matInput [formControl]="url" required>
+          <mat-error *ngIf="url.invalid">{{getUrlErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Group</mat-label>
+          <mat-select [formControl]="group" required>
+            <mat-option value="work">work</mat-option>
+            <mat-option value="leisure">leisure</mat-option>
+            <mat-option value="personal">personal</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div>
+        <button [disabled]="loading" (click)="save()" mat-stroked-button color="accent" class="btn-block">Save</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

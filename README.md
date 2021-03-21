@@ -1,27 +1,52 @@
-# BookmarkApp
+# Bookmark App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+With this app you can handle bookmarks.
 
-## Development server
+- list
+- save
+- delete
+- show details
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This app has some default bookmarks, which are shown on startup. When reloading the page, the defaults are loaded again.
 
-## Code scaffolding
+## How to use
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Install: `npm install`
+2. Run: `ng serve`
+3. Open default address in your browser: `http://localhost:4200/`
+4. Some basic tests can be run by using: `ng test`
 
-## Build
+Tested with **Node.js v14.15.0** on Windows 10 Home. Made with
+- **Angular v11.2.5**
+- **Angular Material**
+- **NGRX**.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+First version made in March 21st, 2021.
 
-## Running unit tests
+## Bonus features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The site is fully responsive. The list page is using **CSS Grid Layout** with *auto-fill* feature.
 
-## Running end-to-end tests
+## List
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Here we can see the bookmarks ordered by group.
 
-## Further help
+![List](doc_img/01_list.png "List")
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Add
+
+The user can add a new bookmark.
+
+![Add](doc_img/02_add.png "Add")
+
+## Details
+
+This page shows the details of the bookmark.
+
+![Details](doc_img/03_details.png "Details")
+
+## Delete
+
+The user can delete a bookmark when clicking on ✕.
+
+![Delete](doc_img/04_delete.png "Delete")
