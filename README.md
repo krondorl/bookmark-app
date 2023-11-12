@@ -16,6 +16,14 @@ This app has some default bookmarks, which are shown on startup. When reloading 
 3. Open default address in your browser: `http://localhost:4200/`
 4. Some basic tests can be run by using: `ng test`
 
+## Release notes
+
+### November, 2023
+
+Updated to **Angular v17**. Tested on Windows 11 Home.
+
+### March, 2021
+
 Tested with **Node.js v14.15.0** on Windows 10 Home. Made with
 - **Angular v11.2.5**
 - **Angular Material**
@@ -50,3 +58,7 @@ This page shows the details of the bookmark.
 The user can delete a bookmark when clicking on ✕.
 
 ![Delete](doc_img/04_delete.png "Delete")
+
+## License
+
+Please see [the LICENSE file](LICENSE).
