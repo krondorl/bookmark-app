@@ -1,6 +1,6 @@
 # Bookmark App
 
-With this app you can handle bookmarks.
+With this app, you can handle bookmarks.
 
 - list
 - save
@@ -12,11 +12,15 @@ This app has some default bookmarks, which are shown on startup. When reloading 
 ## How to use
 
 1. Install: `npm install`
-2. Run: `ng serve`
-3. Open default address in your browser: `http://localhost:4200/`
-4. Some basic tests can be run by using: `ng test`
+1. Run: `ng serve`
+1. Open the default address in your browser: `http://localhost:4200/`
+1. You can run tests by using: `ng test`
 
 ## Release notes
+
+### July, 2024
+
+Updated to **Angular v18**. Tested on Windows 11 Home.
 
 ### November, 2023
 
@@ -25,15 +29,16 @@ Updated to **Angular v17**. Tested on Windows 11 Home.
 ### March, 2021
 
 Tested with **Node.js v14.15.0** on Windows 10 Home. Made with
+
 - **Angular v11.2.5**
 - **Angular Material**
 - **NGRX**.
 
-First version made in March 21st, 2021.
+The first version was made in March 21st, 2021.
 
 ## Bonus features
 
-The site is fully responsive. The list page is using **CSS Grid Layout** with *auto-fill* feature.
+The site is fully responsive. The list page uses using **CSS** Grid Layout\*\* with _auto-fill_ feature.
 
 ## List
 
