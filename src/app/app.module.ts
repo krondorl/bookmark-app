@@ -46,7 +46,7 @@ import { RouterModule } from '@angular/router';
     StoreModule.forRoot({
       bookmarks: reducer
     }),
-    !environment.production ? StoreDevtoolsModule.instrument() : [],
+    !environment.production ? StoreDevtoolsModule.instrument({connectInZone: true}) : [],
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
